@@ -1,0 +1,102 @@
+db.blogTEST.insert({_id: 1, 
+        author_name: "Kaden Nichols", 
+        username: "ksnichols", 
+        twitter_acc: "@ksn", 
+        address: "123 Random Street", 
+        phone_numbers: ["(555)123-4567", "(555)000-1234"],
+        blog_posts:[{title: "I Love Life!", 
+          date: new Date("2019-11-12"),
+          body: "My life is super sick! I live in Madrid now! I do Data Science!",    
+        related_tags: ["Data Science", "Madrid"],
+        comments:[{
+                author_id: 4,
+                date: new Date("2019-11-12"), 
+                time: "10:35", 
+                comment: "Amazing! Is it as cool as San Diego?"},
+                {author_id: 3,
+                date: new Date("2019-11-13"),
+                time: "14:45",
+                comment: "I am glad you enjoy it!"}]}]})
+
+db.blogTEST.insert({_id: 2, 
+        author_name: "Joe Smith", 
+        username: "smith_joe", 
+        twitter_acc: "@smith1", 
+        address: "1010 Main Street", 
+        phone_numbers: [ "(555)898-1243"],
+        blog_posts:
+        [
+        {
+        title: "My day…", 
+        date: new Date("2019-10-14"),
+        body: "I walked the dog and sat outside in the park.",    
+        related_tags: ["dog", "nature", "outside"], 
+        comments:[{
+                        author_id: 1,
+                        date: new Date("2019-10-15"), 
+                        time: "01:54", 
+                        comment: "Glad you went outside. "}]},
+        {title: "Here is an Extra", 
+        date: new Date("2020-10-28"),
+        body: "For posterity purposes.",    
+        related_tags: ["random", "tagtag", "Video Marketing"], 
+        comments:[{
+                author_id: 4,
+                date: new Date("2020-11-29"), 
+                time: "10:12", 
+                comment: "Amazing! Hope it works out for you."}]}
+        ]
+        }
+        );
+
+db.blogTEST.insert({_id: 3, 
+        author_name: "Mery Vettel", 
+        username: "Mery123", 
+        twitter_acc: "@mery_247", 
+        address: "Gran Via, 1", 
+        phone_numbers: ["(555)123-4444", "(555)330-1434", "(555)345-6789"],
+        blog_posts:[
+        {
+                title: "Hopefully this works!", 
+        date: new Date("2019-05-14"),
+        body: "I turned in my project. I am happy with how it went:))!",    
+        related_tags: ["nosql", "school"], 
+        comments:[{
+                author_id: 4,
+                date: new Date("2019-05-20"), 
+                time: "12:54", 
+                comment: "amazing ! extraordinary ! "
+                
+        }
+        ]}]});
+
+db.blogTEST.insert({_id: 4, 
+        author_name: "Brock Lesnar", 
+        username: "ibreakskulls", 
+        twitter_acc: "@skull_crusher", 
+        address: "619 San Diego Drive", 
+        phone_numbers: ["(555)858-9160"],
+        blog_posts:
+        [
+        {title: "My May Update", 
+        date: new Date("2019-05-28"),
+        body: "I had a good May. I won the UFC belt back!",    
+        related_tags: ["fighting", "winner"], 
+        comments:[{
+                author_id: 2,
+                date: new Date("2019-05-29"), 
+                time: "19:10", 
+                comment: “amazing ! extraordinary !I am your biggest fan!"}
+                          ]},
+        {
+        title: "Again to see…", 
+        date: new Date("2020-08-16"),
+        body: "My favorite brand (hahah) is Walmart.",    
+        related_tags: ["Branding"], 
+        comments:[{
+                author_id: 2,
+                date: new Date("2020-8-19"), 
+                time: "20:00", 
+                comment: "I like branding too!"                
+        }]}]});
+
